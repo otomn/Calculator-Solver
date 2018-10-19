@@ -32,6 +32,8 @@ class Operation: CustomStringConvertible {
     }
 }
 
+
+// /1
 class Divide: Operation{
     
     override var description: String {
@@ -46,6 +48,7 @@ class Divide: Operation{
     }
 }
 
+// *1
 class Multiply: Operation{
     
     override var description: String {
@@ -57,6 +60,7 @@ class Multiply: Operation{
     }
 }
 
+// +1
 class Add: Operation{
     
     override var description: String {
@@ -68,6 +72,7 @@ class Add: Operation{
     }
 }
 
+// -1
 class Subtract: Operation{
     
     override var description: String {
@@ -80,6 +85,7 @@ class Subtract: Operation{
     
 }
 
+// <<
 class Delete: Operation{
     
     override var description: String {
@@ -94,6 +100,7 @@ class Delete: Operation{
     
 }
 
+// 1
 class Append: Operation{
     
     override var description: String {
@@ -107,6 +114,7 @@ class Append: Operation{
     
 }
 
+// ^1 (x^1 in the game)
 class Power: Operation{
     
     override var description: String {
@@ -120,6 +128,7 @@ class Power: Operation{
     
 }
 
+// +- (+/- in the game)
 class Sign: Operation{
     
     override var description: String {
@@ -131,6 +140,7 @@ class Sign: Operation{
     }
 }
 
+// 1>2 (1>>2 in the game)
 class Replace: Operation{
     
     var ori: String
@@ -174,6 +184,7 @@ class Replace: Operation{
     }
 }
 
+// r (Reverse in the game)
 class Reverse: Operation{
     
     override var description: String {
@@ -186,6 +197,7 @@ class Reverse: Operation{
     
 }
 
+// sum
 class Sum: Operation{
     
     override var description: String {
@@ -202,6 +214,7 @@ class Sum: Operation{
     
 }
 
+// < or > (shift< or shift> in the game)
 class Shift: Operation{
     
     var left: Bool
@@ -229,6 +242,7 @@ class Shift: Operation{
     
 }
 
+// m (Mirror in the game)
 class Mirror: Operation {
     
     override var description: String {
@@ -242,6 +256,7 @@ class Mirror: Operation {
     
 }
 
+// ++ ([+] in the game)
 class Increment: Operation {
     
     override var description: String {
@@ -254,6 +269,7 @@ class Increment: Operation {
     
 }
 
+// st (hold store in the game)
 class Store: Operation {
     
     override var description: String {
@@ -271,6 +287,7 @@ class Store: Operation {
     
 }
 
+// ps (tap store in the game)
 class Paste: Append {
     
     override var description: String {
@@ -279,6 +296,7 @@ class Paste: Append {
     
 }
 
+// inv (inverse in the game)
 class Inverse: Operation {
     
     override var description: String {
@@ -296,6 +314,7 @@ class Inverse: Operation {
     
 }
 
+// 1-0 (portals in the game)
 class Portal: Operation {
     
     let inPos: Int
