@@ -140,7 +140,7 @@ class Sign: Operation{
     }
 }
 
-// 1>2 (1>>2 in the game)
+// 1>2 (1=>2 in the game)
 class Replace: Operation{
     
     var ori: String
